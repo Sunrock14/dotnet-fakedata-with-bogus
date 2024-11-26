@@ -14,7 +14,7 @@ var host = Host.CreateDefaultBuilder(args)
         {
             var configuration = serviceProvider.GetRequiredService<IConfiguration>();
             //string conn = configuration.GetConnectionString("Server=localhost,1433; Database=FakerApp; User Id=sa; Password=216Fmby216fk; Trusted_Connection=False; TrustServerCertificate=True; Integrated Security=False; Connect Timeout=30; MultipleActiveResultSets=True;");
-            string conn = "Server=localhost,1433; Database=FakerApp; User Id=sa; Password=216Fmby216fk; Trusted_Connection=False; TrustServerCertificate=True; Integrated Security=False; Connect Timeout=30; MultipleActiveResultSets=True;";
+            string conn = "Server=yourConn; Database=FakerApp; User Id=yourUsers; Password=yourPass; Trusted_Connection=False; TrustServerCertificate=True; Integrated Security=False; Connect Timeout=30; MultipleActiveResultSets=True;";
             options.UseSqlServer(conn);
         });
 
